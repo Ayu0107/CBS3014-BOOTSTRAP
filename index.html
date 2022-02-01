@@ -9,14 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="index.js">
 
-  <title>Recruitment form</title>
+  <title>Airobotica</title>
 </head>
 
 <body>
-
 
   <!-- NAVBAR -->
 
@@ -30,11 +27,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item  active">
-          <a class="nav-link" href="#">Apply<span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Apply</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -59,18 +56,32 @@
     </div>
   </nav>
 
-  <h1 class="text-center my-5 font-weight-bold">SUCCESSFULLY SUBMITTED</h1>
+  <h1 class="text-center font-weight-bold py-5">WELCOME TO AIRBOTICA</h1>
 
-  <!-- JUMBOTRON FOR SUCCESSFUL SUBMITTION -->
+  <!-- JUMBOTRON -->
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <h3 class="display-5">Thankyou for applying at AIROBOTICA</h3>
-      <p class="lead">Your details have been successfully recorded. We will get back to you soon.</p>
-      <p>Go back to <a href="index.html" class="text-decoration-none">HOMEPAGE</a> </p>
+  <div class="jumbotron bg-dark">
+    <div class="row">
+      <div class="col text-white">
+        <h2 class="display-4 font-weight-bold">Transform your business with AI</h2>
+        <br>
+        <p class="lead">We at AIROBOTICA works with the laest technology and believe in teaching in the easiest way!</p>
+        <br>
+        <p>To apply for Internship at AIROBOTICA</p>
+
+        <!-- PRIMARY BUTTON REDIRECTING TO RECRUITMENT FORMS -->
+
+        <button class="btn btn-primary px-4 my-2 mx-5"><a href="PersonalDetails.html"
+            class="text-white font-weight-bold">CLICK HERE</a></button>
+      </div>
+      <div class="col">
+        <img src="images/ai.jpg" class="img-responsive w-100" alt="homepage">
+      </div>
     </div>
   </div>
 
+  <!-- JAVASCRIPT FILE -->
+  <script type="text/javascript" src="js/index.js"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
