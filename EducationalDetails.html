@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.js">
+
+  <title>Recruitment form</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-white" href="homepage.html">
+      <img src="/images/logo.png" width="150" height="40" class="d-inline-block align-top" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" href="#">Apply<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">App Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Machine Learning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Artificial Intelligence</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <h1 class="text-center font-weight-bold py-5">INTERNSHIP DRIVE BY AIROBOTICA</h1>
+
+  <!-- BREADCRUMB -->
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="PersonalDetails.html">Personal Details</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Educational Details</li>
+      <li class="breadcrumb-item">Achievements</li>
+      <li class="breadcrumb-item">Questions</li>
+    </ol>
+  </nav>
+
+  <img src="images/officeDesk.jpg" class="img-responsive w-100 headerImage" alt="officeDesk">
+
+  <!-- JUMBOTRON INSIDE CONTAINER -->
+
+  <div class="container mt-5">
+    <div class="jumbotron">
+
+      <!-- PLACEHOLDER FOR ALERT -->
+
+      <div id="alertPlaceholder" class="text-center"></div>
+
+      <!-- FORM -->
+
+      <form method="post" id="RecruitmentForm" action="Resume.html">
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="col-md-6 mb-4 mx-auto">
+            <h3 class="font-weight-bold text-center">EDUCATIONAL DETAILS</h3>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR DEGREE NAME -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputGraduationDegree">Graduation Degree</label>
+            <input type="text" class="form-control" id="inputGraduationDegree"
+              placeholder="Enter your graduation degree..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR UNIVERSITY NAME -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputGraduationUniv">Graduation University</label>
+            <input type="text" class="form-control" id="inputGraduationUniv"
+              placeholder="Enter your graduation university name..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR BRANCH NAME -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputBranch">Stream/Branch</label>
+            <input type="text" class="form-control" id="inputBranch" placeholder="Enter your graduation stream..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- RADIO BUTTON FOR PASSING OUT YEAR -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassingOutYear">Year of Passing Out</label>
+
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="PassingYearRadios" id="2023" value="defaultOption"
+                    checked>
+                  <label class="form-check-label" for="2023">
+                    2023
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- NUMBER INPUT WITH TWO DECIMAL PLACES FOR CGPA -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputCGPA">Current CGPA</label>
+            <input type="number" step="0.01" class="form-control" id="inputCGPA"
+              placeholder="Enter your current CGPA..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- RADIO BUTTON FOR NUMBER OF BACKLOGS -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-4">
+            <label for="inputBacklogs">Active Backlogs</label>
+
+            <div class="form-row">
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="BacklogsRadios" id="inputNone" value="option1"
+                    checked>
+                  <label class="form-check-label" for="inputNone">
+                    None
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="BacklogsRadios" id="inputOne" value="option2">
+                  <label class="form-check-label" for="inputOne">
+                    1
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="BacklogsRadios" id="inputTwo" value="option3">
+                  <label class="form-check-label" for="inputTwo">
+                    2
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="BacklogsRadios" id="inputThree" value="option3">
+                  <label class="form-check-label" for="inputThree">
+                    3 or more
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR 12TH BOARD -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input12Board">12th Board</label>
+            <input type="text" class="form-control" id="input12Board" placeholder="Enter your 12th Board..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- NUMBER INPUT FOR PASSING OUT YEAR OF 12TH -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input12PassYear">12th Passing Out Year</label>
+            <input type="number" class="form-control" id="input12PassYear"
+              placeholder="Enter the year of passing 12th..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- NUMBER INPUT WITH TWO DECIMAL PLACES FOR 12TH PERCENTAGE -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input12BoardPercent">12th Board Percentage</label>
+            <input type="number" step="0.01" class="form-control" id="input12BoardPercent"
+              placeholder="Enter your 12th board percentage..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR 10TH BOARD -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input10Board">10th Board</label>
+            <input type="text" class="form-control" id="input10Board" placeholder="Enter your 10th Board..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- NUMBER INPUT FOR PASSING OUT YEAR OF 12TH -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input10PassYear">10th Passing Out Year</label>
+            <input type="number" class="form-control" id="input10PassYear"
+              placeholder="Enter the year of passing 10th..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- NUMBER INPUT WITH TWO DECIMAL PLACES FOR 10TH BOARD PERCENTAGE -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input10BoardPercent">10th Board Percentage</label>
+            <input type="number" step="0.01" class="form-control" id="input10BoardPercent"
+              placeholder="Enter your 10th board percentage..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- BUTTONS FOR PREVIOUS-SECONDARY, RESET-DANGER, AND NEXT-SUCCESS -->
+
+        <div class="text-center">
+          <a href="PersonalDetails.html"><input class="px-3 mx-3 mt-3 btn btn-secondary btn-lg" type="button"
+              value="PREVIOUS"></a>
+
+                        <!-- RESET BUTTON WILL GIVE ALERT ON CLICK -->
+
+          <button type="button" id="resetAlertBtn" class="px-4 mx-3 mt-3 btn btn-danger btn-lg">RESET</button>
+          <a href="Resume.html"><input class="px-4 mx-3 mt-3 btn btn-success btn-lg" type="submit" value="NEXT"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT FILE -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

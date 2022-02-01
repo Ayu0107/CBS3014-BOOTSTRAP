@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <title>Recruitment form</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-white" href="homepage.html">
+      <img src="/images/logo.png" width="150" height="40" class="d-inline-block align-top" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" href="#">Apply<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">App Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Machine Learning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Artificial Intelligence</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <h1 class="text-center py-5 font-weight-bold">INTERNSHIP DRIVE BY AIROBOTICA</h1>
+
+  <!-- BREADCRUMB -->
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Personal Details</li>
+      <li class="breadcrumb-item">Educational Details</li>
+      <li class="breadcrumb-item">Achievements</li>
+      <li class="breadcrumb-item">Questions</li>
+    </ol>
+  </nav>
+
+  <img src="images/officeDesk.jpg" class="img-responsive w-100 headerImage" alt="officeDesk">
+
+  <!-- JUMBOTRON -->
+
+  <div class="jumbotron my-5 mx-3">
+    <h2 class="display-5 text-center font-weight-bold pb-3">Intenship Opportunity at AIROBOTICA</h2>
+    <p class="lead px-4"> <b>AIROBOTICA</b> is giving opportunity to pre-final year stuents to come and work in an
+      industrial environment, and learn new skills.</p>
+    <p class="px-4">The domains for internship are:</p>
+    <ul class="px-4">
+      <li>Graphic Designer</li>
+      <li>Front-end Developer</li>
+      <li>Back-end Developer</li>
+      <li>App Developer</li>
+      <li>Content Writer</li>
+    </ul>
+    <p>This opportunity is only for pre-final year students and the students will be expected to work for 2 months
+      either in office or remote depending upon the COVID situation.</p>
+  </div>
+
+  <!-- JUMBOTRON INSIDE CONTAINER -->
+
+  <div class="container">
+    <div class="jumbotron">
+
+      <!-- PLACEHOLDER FOR ALERT -->
+
+      <div id="alertPlaceholder" class="text-center"></div>
+
+      <!-- FORM -->
+
+      <form method="post" id="RecruitmentForm" action="EducationalDetails.html">
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="col-md-6 mb-4 mx-auto">
+            <h3 class="font-weight-bold text-center">PERSONAL DETAILS</h3>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR FIRST NAME-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your First Name..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR LAST NAME-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Enter your Last Name..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- EMAIL INPUT FOR EMAIL ID-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email id..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEL INPUT FOR PHONE NUMBER-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputPhoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Enter your Phone Number..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR FATHER'S NAME-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputFatherName">Father's Name</label>
+            <input type="text" class="form-control" id="inputFatherName" placeholder="Enter your Father's Name..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR MOTHER'S NAME-->
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputMotherName">Mother's Name</label>
+            <input type="text" class="form-control" id="inputMotherName" placeholder="Enter your Mother's Name..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- DATE INPUT FOR DATE OF BIRTH-->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputdob">Date of Birth</label>
+            <input type="date" class="form-control" id="inputdob" required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- RADIO BUTTON FOR GENDER -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-4">
+            <label for="inputGender">Gender</label>
+
+            <div class="form-row">
+              <div class="col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="inputMale" value="option1" checked>
+                  <label class="form-check-label" for="inputMale">
+                    Male
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="inputFemale" value="option2">
+                  <label class="form-check-label" for="inputFemale">
+                    Female
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="inputOthers" value="option3">
+                  <label class="form-check-label" for="inputOthers">
+                    Others
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR ADDRESS -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Resedential Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter your resedential address..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXT INPUT FOR CITY -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Enter your city name..." required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- DROPDOWN FOR CHOOSING STATE -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control" required>
+              <option selected>Choose...</option>
+              <option>Andaman and Nicobar</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Chandigarh</option>
+              <option>Chattisgarh</option>
+              <option>Dadra and Nagar Haveli</option>
+              <option>Daman and Diu</option>
+              <option>Delhi</option>
+              <option>Goa</option>
+              <option>Gujrat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jammu and Kashmir</option>
+              <option>Jharkhand</option>
+              <option>Karnatka</option>
+              <option>Kerala</option>
+              <option>Lakshadeep</option>
+              <option>Madhya Pradesh</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Orrisa</option>
+              <option>Puducherry</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkhim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Telangana</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>West Bengal</option>
+            </select>
+          </div>
+
+          <!-- TEXT INPUT FOR PINCODE -->
+
+          <div class="form-group col-md-3">
+            <label for="inputPin">Pin Code</label>
+            <input type="text" class="form-control" id="inputPin" placeholder="Enter the pincode of your area..."
+              required>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- BUTTONS FOR RESET-DANGER AND NEXT-SUCCESS -->
+
+        <div class="text-center">
+
+          <!-- RESET BUTTON WILL GIVE ALERT ON CLICK -->
+
+          <button type="button" id="resetAlertBtn" class="px-4 mx-3 mt-3 btn btn-danger btn-lg">RESET</button>
+          <a href="EducationalDetails.html"><input class="px-4 mx-3 mt-3 btn btn-success btn-lg" type="submit"
+              value="NEXT" onClick="redirect();"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- JAVASCRIPT FILE -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

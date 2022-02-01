@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.js">
+
+  <title>Recruitment form</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-white" href="homepage.html">
+      <img src="/images/logo.png" width="150" height="40" class="d-inline-block align-top" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" href="#">Apply<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">App Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Machine Learning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Artificial Intelligence</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <h1 class="text-center font-weight-bold py-5">INTERNSHIP DRIVE BY GOOGLE</h1>
+
+  <!-- BREADCRUMB -->
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="PersonalDetails.html">Personal Details</a></li>
+      <li class="breadcrumb-item"><a href="EducationalDetails.html">Edcational Details</a></li>
+      <li class="breadcrumb-item"><a href="Resume.html">Upload Resume</a></li>
+      <li class="breadcrumb-item  active" aria-current="page">Questions</li>
+    </ol>
+  </nav>
+
+  <img src="images/officeDesk.jpg" class="img-responsive w-100 headerImage" alt="officeDesk">
+
+  <!-- JUMBOTRON INSIDE CONTAINER -->
+
+  <div class="container mt-5">
+    <div class="jumbotron">
+
+      <!-- PLACEHOLDER FOR ALERT -->
+
+      <div id="alertPlaceholder" class="text-center"></div>
+
+      <!-- FORM -->
+
+      <form action="Submitted.html" id="RecruitmentForm">
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="col-md-6 mb-4 mx-auto">
+            <h3 class="font-weight-bold text-center">QUESTIONS</h3>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- CHECKBOX INPUT FOR CHOOSING DOMAINS -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-4">
+            <label for="inputDomain">Choose Domain(s)</label>
+
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="domainRadios" id="inputGraphicDesigner"
+                  value="option1">
+                <label class="form-check-label" for="inputGraphicDesigner">
+                  Graphic Designer
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="domainRadios" id="inputFrontend" value="option2">
+                <label class="form-check-label" for="inputFrontend">
+                  Front-end Developer
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="domainRadios" id="inputBackend" value="option3">
+                <label class="form-check-label" for="inputBackend">
+                  Back-end Developer
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="domainRadios" id="inputApp" value="option3">
+                <label class="form-check-label" for="inputApp">
+                  App Developer
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="domainRadios" id="inputContent" value="option3">
+                <label class="form-check-label" for="inputContent">
+                  Content Writer
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXTAREA INPUT FOR ANSWERING QUESTION -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input10Board">Why should you be hired for this role?</label>
+            <textarea class="form-control" aria-label="With textarea" placeholder="Answer the question briefly..."
+              required></textarea>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- TEXTAREA INPUT FOR ANSWERING QUESTION -->
+
+        <div class="form-row">
+          <div class="col-md-3"> </div>
+          <div class="form-group col-md-6">
+            <label for="input10Board">Are you available for 2 months, starting immediately, for a work from home
+              internship? If not, what is the time period you are available for and the earliest date you can start this
+              internship on?</label>
+            <textarea class="form-control" aria-label="With textarea" placeholder="Answer the question briefly..."
+              required></textarea>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+
+        <!-- BUTTONS FOR PREVIOUS-SECONDARY, RESET-DANGER, AND NEXT-SUCCESS -->
+
+        <div class="text-center">
+          <a href="Resume.html"><input class="px-3 mx-3 mt-3 btn btn-secondary btn-lg" type="button"
+              value="PREVIOUS"></a>
+
+          <!-- RESET BUTTON WILL GIVE ALERT ON CLICK -->
+
+          <button type="button" id="resetAlertBtn" class="px-4 mx-3 mt-3 btn btn-danger btn-lg">RESET</button>
+          <a href="Submitted.html"><input id="submitAlertBtn" class="px-4 mx-3 mt-3 btn btn-success btn-lg"
+              type="submit" value="SUBMIT" onClick="redirect();"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- JAVASCRIPT FILE -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
